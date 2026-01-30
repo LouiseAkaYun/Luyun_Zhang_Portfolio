@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analyst Portfolio | Data & Strategy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            earth: {
+              50: '#F5F5F3',   // Lightest cream
+              100: '#E2DDD5',  // Light beige
+              200: '#D2C5B8',  // Warm mid
+              300: '#C4B4A5',  // Tan
+              500: '#9A8D83',  // Center taupe (Primary accent)
+              900: '#4A443F',  // Deep muted brown
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      scroll-padding-top: 5rem;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F5F5F3;
+    }
+    .serif {
+      font-family: 'Playfair Display', serif;
+    }
+    section {
+      scroll-margin-top: 5rem;
+    }
+    /* Smooth transitions for hover effects */
+    .transition-all {
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@19.2.4/",
+    "react/": "https://esm.sh/react@19.2.4/",
+    "react": "https://esm.sh/react@19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-earth-50 text-earth-900">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
